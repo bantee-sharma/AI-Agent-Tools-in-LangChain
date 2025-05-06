@@ -8,6 +8,7 @@ import re
 
 load_dotenv()
 
+
 # step-1
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 search_tool = DuckDuckGoSearchRun()
