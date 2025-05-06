@@ -14,6 +14,7 @@ search_tool = DuckDuckGoSearchRun()
 
 
 @tool
+
 def add(input: str) -> int:
     """Add two numbers. Extracts any two integers from the input."""
     numbers = list(map(int, re.findall(r'\d+', input)))
