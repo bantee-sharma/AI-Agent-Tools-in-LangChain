@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 from langchain_community.tools import DuckDuckGoSearchRun
 import re
 
-
 load_dotenv()
 
 # step-1
