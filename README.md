@@ -6,8 +6,6 @@ This project demonstrates how to build a ReAct-based AI agent using Google Gemin
 It uses LangChain’s agent tools framework, combines it with Gemini’s generative capabilities, and includes a custom add() tool that parses and sums integers from text.
 
 
-.gitattributes	Git configuration for text and language normalization.
-.gitignore	Specifies files/folders to exclude from version control.
 README.md	Overview, setup guide, and usage instructions.
 add and search.py	Main script creating the ReAct agent with DuckDuckGo and add() tool support.
 agent.py	(Optional split) Could house agent setup logic separately if modularized.
