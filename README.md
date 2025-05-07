@@ -7,7 +7,7 @@ It uses LangChain’s agent tools framework, combines it with Gemini’s generat
 
 
 
-test.py	Script for testing agent functionality.
+
 
 🧠 Features
 🔍 Web Search Tool: Uses DuckDuckGo to fetch live results.
