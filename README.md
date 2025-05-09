@@ -10,7 +10,7 @@ It uses LangChain’s agent tools framework, combines it with Gemini’s generat
 
 
 
-*🧠 Features*
+**🧠 Features**
 🔍 Web Search Tool: Uses DuckDuckGo to fetch live results.
 
 ➕ Math Tool: Parses and adds integers found in user queries.
