@@ -7,3 +7,5 @@ google-generativeai
 
 python-dotenv
 duckduckgo-search
+stremalit
+
