@@ -16,6 +16,7 @@ It uses LangChain’s agent tools framework, combines it with Gemini’s generat
 ➕ Math Tool: Parses and adds integers found in user queries.
 
 🤖 ReAct Agent:
+
 Uses LangChain’s ReAct framework and Gemini model to reason and act step-by-step.
 
 🚀 Example Query
