@@ -20,6 +20,7 @@ chain = prompt | llm
 # Streamlit UI
 st.title("🤖 LangChain Question Answering Model")
 st.write("Ask me anything!")
+
 user_input = st.text_input("Enter your question")
 if st.button('Get Answer'):
     res = chain.invoke({"question":user_input})
