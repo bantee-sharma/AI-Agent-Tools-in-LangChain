@@ -1,37 +1,37 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_community.tools import DuckDuckGoSearchRun
+from langchain.agents import tool, create_react_agent, AgentExecutor
 from dotenv import load_dotenv
+import requests
 from langchain import hub
-from langchain.agents import create_react_agent,AgentExecutor
-from duckduckgo_search import DuckDuckGoSearchException
 
 load_dotenv()
 
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
-search = DuckDuckGoSearchRun()
+@tool
+def weather(city:str)->str:
+    "Fetch the current weather of the city"
+    url = 'https://api.weatherstack.com/current?access_key=2eab0e8b57aa4c3082a9f22e95baa467&query={city}'
+    response = requests.get(url)
+    return response.json()
 
-prompt = hub.pull("hwchase17/react")
+prompt=hub.pull("hwchase17/react")
 
-agent  = create_react_agent(
+agent = create_react_agent(
     llm=llm,
-    prompt=prompt,
-    tools=[search]
+    tools=[weather],
+    prompt = prompt
 )
 
-agent_executer = AgentExecutor(
+agent_exe = AgentExecutor(
     agent=agent,
-    tools=[search],
-    verbose=True,
-    handle_parsing_errors=True
+    tools=[weather],
+    verbose=True
 )
 
-'''response = agent_executer.invoke({"input":'3 ways to reach delhi from jewar'})
-print(response)'''
+query = "waht is the weather in Bhopal"
+result = agent_exe.invoke({"input":query})
+print(result)
 
-try:
-    result = search.run("how to get from jewar to delhi")
-except DuckDuckGoSearchException as e:
-    print("Encountered a rate limit error. Waiting for a while before retrying...")
-     # Adjust sleep time as needed.
-    result = search.run("how to get from jewar to delhi")
+
+
