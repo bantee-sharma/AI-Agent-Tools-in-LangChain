@@ -25,3 +25,8 @@ prompt = PromptTemplate(
     Translate text:{text} from the following language source:{source_lang} into this targated language 
     trget{traget_lang} and return translated text.''',
     input_variables=["text","source_lang","target_lang"])
+
+user_input = st.text_input("type...")
+if st.button("Translate"):
+    chain = prompt|llm
+    
