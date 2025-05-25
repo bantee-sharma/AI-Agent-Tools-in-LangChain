@@ -29,4 +29,5 @@ prompt = PromptTemplate(
 user_input = st.text_input("type...")
 if st.button("Translate"):
     chain = prompt|llm
-    
+    res = chain.invoke({"input":user_input,"source_lang":source_lang,"target_lang":target_lang})
+    st.write(res.content)
