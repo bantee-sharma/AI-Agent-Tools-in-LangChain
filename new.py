@@ -20,11 +20,17 @@ with col1:
 with col2:
     target_lang = st.selectbox("target_lang",languages,index=1)
 
+
+
 prompt = PromptTemplate(
-    template='''You are language Translator.
-    Translate text:{text} from the following source language:{source_lang} to targat language 
-    target language{traget_lang} and return translated text.''',
-    input_variables=["text","source_lang","target_lang"])
+    template='''You are a language translator.
+Translate the following text: {text}
+From source language: {source_lang}
+To target language: {target_lang}
+Return only the translated text.''',
+    input_variables=["text", "source_lang", "target_lang"]
+)
+
 
 user_input = st.text_input("type...")
 if st.button("Translate"):
