@@ -22,12 +22,12 @@ with col2:
 
 prompt = PromptTemplate(
     template='''You are language Translator.
-    Translate text:{text} from the following language source:{source_lang} into this targated language 
-    trget{traget_lang} and return translated text.''',
+    Translate text:{text} from the following source language:{source_lang} to targat language 
+    target language{traget_lang} and return translated text.''',
     input_variables=["text","source_lang","target_lang"])
 
 user_input = st.text_input("type...")
 if st.button("Translate"):
     chain = prompt|llm
-    res = chain.invoke({"input":user_input,"source_lang":source_lang,"target_lang":target_lang})
+    res = chain.invoke({"text":user_input,"source_lang":source_lang,"target_lang":target_lang})
     st.write(res.content)
