@@ -9,9 +9,12 @@ llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
 def weather(city:str)->str:
     "fetch the current weather of city."
-    url = url = "https://api.weatherstack.com/current?access_key={2eab0e8b57aa4c3082a9f22e95baa467}"
+    url = url = "https://api.weatherstack.com/current?access_key=2eab0e8b57aa4c3082a9f22e95baa467"
 
-    querystring = {"query":"New Delhi"}
+    
+
+
+    querystring = {"query":city}
 
 
     respose = requests.get(url,params=querystring)
