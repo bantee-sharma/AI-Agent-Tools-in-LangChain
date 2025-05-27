@@ -32,6 +32,6 @@ agente_exe = AgentExecutor(
     verbose=True
 )
 
-query = "Where is delhi?"
+query = "Temp of new delhi"
 result = agente_exe.invoke({"input":query})
 print(result)
