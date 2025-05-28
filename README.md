@@ -1,6 +1,5 @@
 # 🔧 AI Assistant Tools
 
-**🔎 DuckDuckGo + Gemini AI Agent**
 
 This repository contains a set of modular tools designed to be integrated into a larger AI assistant or agent framework. These tools provide functionality like document search, web search, weather queries, and simple data addition and retrieval.
 
