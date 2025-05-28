@@ -6,7 +6,13 @@ This repository contains a set of modular tools designed to be integrated into a
 It uses LangChain’s agent tools framework, combines it with Gemini’s generative capabilities, and includes a custom add() tool that parses and sums integers from text.
 
 
+## 🔍 Tools Description
 
+1. add_and_search.py
+   
+Handles simple data storage and keyword-based search.
+
+Could be used for storing custom knowledge snippets or notes.
 
 
 **🧠 Features**
