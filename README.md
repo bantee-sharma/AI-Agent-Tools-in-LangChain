@@ -2,7 +2,7 @@
 
 **🔎 DuckDuckGo + Gemini AI Agent**
 
-This project demonstrates how to build a ReAct-based AI agent using Google Gemini (via LangChain) that can perform real-time web searches using DuckDuckGo and basic arithmetic with natural language input.
+This repository contains a set of modular tools designed to be integrated into a larger AI assistant or agent framework. These tools provide functionality like document search, web search, weather queries, and simple data addition and retrieval.
 
 It uses LangChain’s agent tools framework, combines it with Gemini’s generative capabilities, and includes a custom add() tool that parses and sums integers from text.
 
