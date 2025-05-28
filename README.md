@@ -8,11 +8,16 @@ It uses LangChain’s agent tools framework, combines it with Gemini’s generat
 
 ## 🔍 Tools Description
 
-1. add_and_search.py
+**1. add_and_search.py**
    
 Handles simple data storage and keyword-based search.
 
 Could be used for storing custom knowledge snippets or notes.
+
+2. search_tool.py
+A web search tool that leverages an external search API (e.g., SerpAPI, Bing API, etc.).
+
+Used to fetch the latest information from the web.
 
 
 **🧠 Features**
