@@ -23,3 +23,18 @@ Used to fetch the latest information from the web.
 3. weather.py
 Fetches real-time weather information using a weather API (e.g., OpenWeatherMap).
 
+
+
+🛠️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/ai-tools.git
+cd ai-tools
+```
+
+Install the required Python packages:
+```bash
+pip install -r requirements.txt
+```
