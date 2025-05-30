@@ -35,7 +35,7 @@ git clone https://github.com/your-username/ai-tools.git
 cd ai-tools
 ```
 
-Install the required Python packages:
+**Install the required Python packages:**
 ```bash
 pip install -r requirements.txt
 ```
