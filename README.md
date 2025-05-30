@@ -26,7 +26,7 @@ Fetches real-time weather information using a weather API (e.g., OpenWeatherMap)
 
 
 
-**🛠️ Installation**
+## 🛠️ Installation
 
 Clone the repository:
 
