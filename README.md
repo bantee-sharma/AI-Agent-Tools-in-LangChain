@@ -21,6 +21,7 @@ A web search tool that leverages an external search API (e.g., SerpAPI, Bing API
 Used to fetch the latest information from the web.
 
 **3. weather.py**
+
 Fetches real-time weather information using a weather API (e.g., OpenWeatherMap).
 
 
