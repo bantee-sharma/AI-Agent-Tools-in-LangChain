@@ -25,7 +25,17 @@ def weather(city:str)->str:
 
 tools = [search,weather]
 
-llm_bind = llm.bind_tools(tools)
+agent = create_react_agent(
+    llm=llm,
+    prompt=prompt,
+    tools = [search,weather]
+)
 
-print(llm_bind({"query" :"weather of noida"}))
+agent_exe = AgentExecutor(
+    agent=agent,
+    tools=[search,weather],
+    verbose=True
+)
 
+response = agent_exe.invoke({"input":"weather of jewar"})
+print(response)
