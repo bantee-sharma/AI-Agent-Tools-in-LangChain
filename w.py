@@ -27,5 +27,5 @@ def weather(city:str)->str:
 
 
 query = input()
-res = llm_with.invoke({"input":query})
+res = llm_with.invoke(query)
 print(res)
