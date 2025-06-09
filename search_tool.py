@@ -2,6 +2,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.tools import DuckDuckGoSearchRun,tool
 from langchain.agents import AgentExecutor, create_react_agent
 from langchain import hub
+from duckduckgo_search import DuckDuckGoSearchException
 
 # step-1
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
